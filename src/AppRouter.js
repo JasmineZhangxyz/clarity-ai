@@ -10,15 +10,16 @@ import AttentionMapPage from './pages/AttentionMapPage';
 
 const AppRouter = () => {
   return (
-    <Router>
-        <NavBar />
+    <Router> 
+      <NavBar />
         <Routes>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/info" component={InfoPage} />
-            <Route path="/dnn-data" component={DnnDataPage} />
-            <Route path="/feature-importance" component={FeatureImportancePage} />
-            <Route path="/cnn-data" component={CnnDataPage} />
-            <Route path="/attention-maps" component={AttentionMapPage} />
+            <Route exact path="/" element={<HomePage />}/>
+            <Route path="/info" element={<InfoPage />} />
+            <Route path="/dnn-data" element={<DnnDataPage />} />
+            <Route path="/feature-importance" element={<FeatureImportancePage />} />
+            <Route path="/cnn-data" element={<CnnDataPage />} />
+            <Route path="/attention-maps" element={<AttentionMapPage />} />
+
         </Routes>
     </Router>
   );
