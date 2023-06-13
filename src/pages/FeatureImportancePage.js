@@ -49,7 +49,7 @@ const FeatureImportancePage = (props) => {
 
   return (
     <div style={pageStyle}>
-      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a CNN. Check out our info page for details. </h6>
+      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a DNN. Check out our info page for more details. </h6>
     
       <Form.Group style={formStyle}>
       <Form.Label><h6 style={textStyle}> Upload your Neuro network model here</h6></Form.Label>
@@ -71,7 +71,7 @@ const FeatureImportancePage = (props) => {
       />
       </Form.Group>
 
-      <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Attention Maps</Button>
+      <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Feature Importance Graphs</Button>
     </div>
   );
 };

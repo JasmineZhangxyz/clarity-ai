@@ -49,7 +49,7 @@ const AttentionMapPage = (props) => {
   
     return (
       <div style={pageStyle}>
-        <h6 style={textStyle}>Attension maps highlight the specific regions of an input image that are most relevant in the decision making proecss of a CNN. Check out info page for more details!</h6>
+        <h6 style={textStyle}>Attention maps highlight the specific regions of an input image that are most relevant in the decision making proecss of a CNN. Check out info page for more details!</h6>
       
         <Form.Group style={formStyle}>
         <Form.Label><h6 style={textStyle}> Upload your CNN model here</h6></Form.Label>
