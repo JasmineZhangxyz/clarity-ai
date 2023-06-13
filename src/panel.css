@@ -1,0 +1,27 @@
+
+  
+  .panel {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e7e8ea;
+    border: 1px solid #e7e8ea;
+    border-radius: 5px;
+
+  }
+  
+  .panel h2 {
+    margin-bottom: 10px;
+    color: #2A52BE;
+  }
+  
+  .panel p {
+    margin-bottom: 20px;
+    color: #2A52BE;
+  }
+  
+  
+  .sub-panels {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
