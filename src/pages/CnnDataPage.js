@@ -72,6 +72,10 @@ const CnnDataPage = () => {
               <img src={max_pooling2d_5} alt="Original Image" style={imageStyle}/>
               <p className="image-label">Layer: max_pooling2d_5</p>
             </div>
+            <div>
+              <img src={conv2d_9} alt="Original Image" style={imageStyle}/>
+              <p className="image-label">Layer: conv2d_9</p>
+            </div>
           </div>
           <div style={{ padding: '4%' }}>
               <button style={{ backgroundColor: '#BCF8EC', color: '#2A52BE', padding: '10px 20px', fontSize: '16px' }}>Download</button>
