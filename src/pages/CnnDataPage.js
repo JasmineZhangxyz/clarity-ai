@@ -15,6 +15,7 @@ const CnnDataPage = () => {
       color: 'white',
       textAlign: 'center',
       padding: '20px',
+      fontFamily: 'Montserrat, sans-serif'
     };
 
     const imageLayoutStyle = {
