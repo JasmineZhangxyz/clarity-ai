@@ -9,19 +9,40 @@ const DnnDataPage = () => {
         color: 'white',
         textAlign: 'center',
         padding: '20px',
-        height: '100vh',
+        fontFamily: 'Montserrat, sans-serif'
       };
-
-    return (
+  
+      const imageLayoutStyle = { 
+        marginRight: '20px', 
+        marginBottom: '20px', 
+        flexWrap: 'wrap',
+      };
+  
+      const imageStyle = {
+        maxWidth: '70%', 
+        minWidth: '300px',
+        height: 'auto', 
+        padding: '20px',
+      };
+    
+      return (
         <div style={pageStyle}>
             <div>
-                <p>Feature importance measures the significance of input features in influencing the predictions of a DNN. Feature correlation quantifies how changes in one feature are related to changes in another feature. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</p>
+            <p>Feature importance measures the significance of input features in influencing the predictions of a DNN. Feature correlation quantifies how changes in one feature are related to changes in another feature. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</p>
             </div>
-            <div>
-                <img src={FIgraph} alt="Feature Importance Graph" style={{ width: '45%', height: 'auto' , marginRight: '2%' }}/>
-                <img src={FIcorr} alt="Feature Correlation Matrix" style={{ width: '45%', height: 'auto' }}/>
+            <div style={imageLayoutStyle}>
+                <div>
+                    <img src={FIgraph} alt="Feature Importance Graph" style={imageStyle}/>
+                </div>
+                <div>
+                    <img src={FIcorr} alt="Feature Correlation Matrix" style={imageStyle}/>
+                </div>
+            </div>
+            <div style={{ padding: '4%' }}>
+                <button style={{ backgroundColor: '#BCF8EC', color: '#2A52BE', padding: '10px 20px', fontSize: '16px' }}>Download</button>
             </div>
         </div> 
+
     );
   };
 

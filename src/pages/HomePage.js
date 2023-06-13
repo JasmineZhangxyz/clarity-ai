@@ -1,6 +1,5 @@
 import React from 'react';
 import MainLogo from '../images/main-logo.png';
-//need another image here (ClarityAI text)
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +9,7 @@ const HomePage = () => {
       backgroundColor: '#2A52BE',
       color: 'white',
       textAlign: 'center',
-      padding: '20px',
+      padding: '30px',
     };
   
     return (
@@ -26,7 +25,7 @@ const HomePage = () => {
             <span style={{ color: 'white' }}>Clarity</span>AI.
             </h1>
       </div>
-      <h1 style={{ color: '#BCF8EC', fontFamily: 'Archivo Black, sans-serif', fontSize: '30px'}}>Transparent AI For All</h1>
+      <h1 style={{ color: '#BCF8EC', fontFamily: 'Archivo Black, sans-serif', fontSize: '30px', padding: '30px'}}>Transparent AI For All</h1>
       <p>ClarityAI is a powerful tool that allows you to gain valuable insights into your model and
         interpret how it makes decisions.
       </p>
@@ -39,16 +38,13 @@ const HomePage = () => {
       <p>Attention Maps highlight the specific regions of an input image that are most relevant in
          the decision-making process of a CNN.  
       </p>      
-      <div style={{ display: 'flex', justifyItems: 'stretch', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '2%' }}></div>
       <Link to= "/feature-importance" >
         <Button style={{backgroundColor: "#BCF8EC", color: "#00005c",fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Feature Importance</Button>{' '}
       </Link>
       <Link to="/attention-maps">
         <Button style={{backgroundColor: "#BCF8EC", color: "#00005c", fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Attention Maps</Button>{' '}
       </Link>
-
-      </div>
-      
       </div>
     );
   };
