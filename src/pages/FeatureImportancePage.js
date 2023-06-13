@@ -1,5 +1,6 @@
 import React , { useState } from 'react';
 import {Button, Form} from 'react-bootstrap'  
+import { Link } from 'react-router-dom';
 
 const FeatureImportancePage = (props) => {
   const [text, setText] = useState('');
@@ -71,7 +72,10 @@ const FeatureImportancePage = (props) => {
       />
       </Form.Group>
 
+      <Link to= "/dnn-data" >
       <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Feature Importance Graphs</Button>
+      </Link>
+      
     </div>
   );
 };
