@@ -40,11 +40,11 @@ const HomePage = () => {
          the decision-making process of a CNN.  
       </p>      
       <div style={{ display: 'flex', justifyContent: 'space-between' }}></div>
-      <Link to= "http://localhost:3002/dnn-data" >
-        <Button style={{backgroundColor: "#BCF8EC", color: "#00005c",fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)"}}size='lg'>Generate Feature Importance</Button>{' '}
+      <Link to= "/feature-importance" >
+        <Button style={{backgroundColor: "#BCF8EC", color: "#00005c",fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Feature Importance</Button>{' '}
       </Link>
-      <Link to="http://localhost:3002/cnn-data">
-        <Button style={{backgroundColor: "#BCF8EC", color: "#00005c", fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)"}}size='lg'>Generate Attention Maps</Button>{' '}
+      <Link to="/attention-maps">
+        <Button style={{backgroundColor: "#BCF8EC", color: "#00005c", fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Attention Maps</Button>{' '}
       </Link>
       </div>
     );

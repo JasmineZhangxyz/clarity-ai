@@ -1,5 +1,6 @@
 import React , { useState } from 'react';
 import {Button, Form} from 'react-bootstrap'  
+import { Link } from 'react-router-dom';
 
 const FeatureImportancePage = (props) => {
   const [text, setText] = useState('');
@@ -10,7 +11,7 @@ const FeatureImportancePage = (props) => {
 
   const handleFileChange = (event) => {
   const file = event.target.files[0];
-  onChange(file);
+  setText(file);
   };
 
   const pageStyle = {
@@ -49,7 +50,7 @@ const FeatureImportancePage = (props) => {
 
   return (
     <div style={pageStyle}>
-      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a CNN. Check out our info page for details. </h6>
+      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a DNN. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details. </h6>
     
       <Form.Group style={formStyle}>
       <Form.Label><h6 style={textStyle}> Upload your Neuro network model here</h6></Form.Label>
@@ -71,7 +72,10 @@ const FeatureImportancePage = (props) => {
       />
       </Form.Group>
 
-      <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Attention Maps</Button>
+      <Link to= "/dnn-data" >
+      <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Feature Importance Graphs</Button>
+      </Link>
+      
     </div>
   );
 };

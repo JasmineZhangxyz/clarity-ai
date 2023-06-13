@@ -9,7 +9,9 @@ const Footer = () => {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
         <img src={mail} alt="Logo 1" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
         <img src={logo} alt="Logo 2" style={{ width: '30px', height: '30px', marginRight: '17px' }} />
-        <img src={github} alt="Logo 3" style={{ width: '25px', height: '25px' }} />
+            <a href="https://github.com/JasmineZhangxyz/clarity-ai">
+          <img src={github} alt="Logo 3" style={{ width: '25px', height: '25px' }} />
+          </a>
       </div>
       <p>This project was created by Anna Lai, Jasmine Sun-Hu, Jasmine Zhang, Jeanine Ohene-Agyei and Matya Stavnitzky under the support of <a href="https://www.ai4goodlab.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#BCF8EC' }}>AI4Good Lab</a> </p>
       <p style={{ fontSize: '12px' }}>© 2023 ClarityAI. All rights reserved. (not really)</p>

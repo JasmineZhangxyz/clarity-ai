@@ -27,8 +27,6 @@ const NavBar = () => {
                     <Link to="/info" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Info</Link>
                     <Link to="/feature-importance" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Feature Importance</Link>
                     <Link to="/attention-maps" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Attention Maps</Link>
-                    <Link to="/dnn-data" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>DNN Data</Link>
-                    <Link to="/cnn-data" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>CNN Data</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

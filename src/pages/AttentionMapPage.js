@@ -1,5 +1,6 @@
 import React , { useState } from 'react';
-import {Button, Form} from 'react-bootstrap'  
+import {Button, Form} from 'react-bootstrap'
+import { Link } from 'react-router-dom';  
 
 const AttentionMapPage = (props) => {
     const [text, setText] = useState('');
@@ -10,7 +11,7 @@ const AttentionMapPage = (props) => {
 
     const handleFileChange = (event) => {
     const file = event.target.files[0];
-    onChange(file);
+    setText(file);
     };
 
     const pageStyle = {
@@ -49,7 +50,7 @@ const AttentionMapPage = (props) => {
   
     return (
       <div style={pageStyle}>
-        <h6 style={textStyle}>Attension maps highlight the specific regions of an input image that are most relevant in the decision making proecss of a CNN. Check out info page for more details!</h6>
+        <h6 style={textStyle}>Attention maps highlight the specific regions of an input image that are most relevant in the decision making proecss of a CNN. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</h6>
       
         <Form.Group style={formStyle}>
         <Form.Label><h6 style={textStyle}> Upload your CNN model here</h6></Form.Label>
@@ -71,7 +72,10 @@ const AttentionMapPage = (props) => {
         />
         </Form.Group>
 
+        <Link to= "/cnn-data" >
         <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Attention Maps</Button>
+        </Link>
+        
       </div>
     );
   };
