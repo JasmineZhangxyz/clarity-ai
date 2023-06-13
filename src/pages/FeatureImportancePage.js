@@ -11,7 +11,7 @@ const FeatureImportancePage = (props) => {
 
   const handleFileChange = (event) => {
   const file = event.target.files[0];
-  onChange(file);
+  setText(file);
   };
 
   const pageStyle = {
