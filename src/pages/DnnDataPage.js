@@ -10,6 +10,7 @@ const DnnDataPage = () => {
         color: 'white',
         textAlign: 'center',
         padding: '20px',
+        height: '100vh',
       };
 
     return (

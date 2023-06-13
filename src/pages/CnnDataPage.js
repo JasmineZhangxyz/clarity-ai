@@ -4,7 +4,7 @@ import '../App.css';
 
 const CnnDataPage = () => {
     const pageStyle = {
-      backgroundColor: 'blue',
+      backgroundColor: '#2A52BE',
       color: 'white',
       textAlign: 'center',
       padding: '20px',
@@ -12,7 +12,7 @@ const CnnDataPage = () => {
   
     return (
       <div style={pageStyle}>
-        <h1>Welcome to ClarityAI CNN Data Page</h1>
+        <p>Attention maps highlight the specific regions of an input image that are most relevant in the decision-making process of a convolutional neural network. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</p>
       </div>
     );
   };

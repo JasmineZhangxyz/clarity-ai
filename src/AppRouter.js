@@ -7,6 +7,7 @@ import DnnDataPage from './pages/DnnDataPage';
 import FeatureImportancePage from './pages/FeatureImportancePage';
 import CnnDataPage from './pages/CnnDataPage';
 import AttentionMapPage from './pages/AttentionMapPage';
+import Footer from './components/Footer';
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
             <Route path="/attention-maps" element={<AttentionMapPage />} />
 
         </Routes>
+      <Footer />
     </Router>
   );
 };

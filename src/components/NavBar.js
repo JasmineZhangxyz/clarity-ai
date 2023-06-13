@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import LogoImage from '../navbar-logo.png';
+import LogoImage from '../images/navbar-logo.png';
 
 const NavBar = () => {
     const activeLinkStyle = {
