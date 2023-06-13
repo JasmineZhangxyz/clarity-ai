@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import FIgraph from '../images/feature-importance.png';
 import FIcorr from '../images/feature-correlation.png';
 
