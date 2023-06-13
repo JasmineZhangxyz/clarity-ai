@@ -1,5 +1,5 @@
 import React from 'react';
-import MainLogo from '/Users/user/Desktop/clarity-ai/src/images/main-logo.png';
+import MainLogo from '../images/main-logo.png';
 //need another image here (ClarityAI text)
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
