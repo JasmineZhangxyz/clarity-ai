@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppRouter from './AppRouter';
-import './App.css';
-import NavBar from './components/NavBar';
 
 const App = () => {
-  return (
-  <div>
-    <AppRouter />  
-  </div>
-  );
+  useEffect(() => {
+    document.title = 'Clarity AI';
+  }, []);
+
+  return <AppRouter />;
 };
 
 export default App;

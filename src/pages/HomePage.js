@@ -1,5 +1,4 @@
 import React from 'react';
-import '/Users/user/Desktop/clarity-ai/src/App.css';
 import MainLogo from '/Users/user/Desktop/clarity-ai/src/images/main-logo.png';
 //need another image here (ClarityAI text)
 import { Button } from 'react-bootstrap';

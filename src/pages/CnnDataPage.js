@@ -1,6 +1,4 @@
 import React from 'react';
-import '../App.css';
-
 
 const CnnDataPage = () => {
     const pageStyle = {
