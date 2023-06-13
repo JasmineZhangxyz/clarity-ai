@@ -39,13 +39,16 @@ const HomePage = () => {
       <p>Attention Maps highlight the specific regions of an input image that are most relevant in
          the decision-making process of a CNN.  
       </p>      
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}></div>
+      <div style={{ display: 'flex', justifyItems: 'stretch', justifyContent: 'center' }}>
       <Link to= "/feature-importance" >
         <Button style={{backgroundColor: "#BCF8EC", color: "#00005c",fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Feature Importance</Button>{' '}
       </Link>
       <Link to="/attention-maps">
         <Button style={{backgroundColor: "#BCF8EC", color: "#00005c", fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Attention Maps</Button>{' '}
       </Link>
+
+      </div>
+      
       </div>
     );
   };
