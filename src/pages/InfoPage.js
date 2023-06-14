@@ -8,7 +8,7 @@ const Panel = ({ heading, subtext }) => (
   </div>
 );
 
-const App = () => {
+const Infopage = () => {
     const pageStyle = {
         backgroundColor: '#2A52BE',
         color: 'white',
@@ -51,4 +51,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Infopage;
