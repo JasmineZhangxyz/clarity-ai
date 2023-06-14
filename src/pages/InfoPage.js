@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/user/Desktop/clarity-ai/src/panel.css'; 
+import '../panel.css'; 
 
 const Panel = ({ heading, subtext }) => (
   <div styleclassName="panel">
