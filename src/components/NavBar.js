@@ -19,7 +19,9 @@ const NavBar = () => {
                 />
             </div>
             <div className="navbar-brand">
-                <Navbar.Brand href="/" style={{ color: '#2A52BE', fontFamily: 'Archivo Black, sans-serif' }}>ClarityAI</Navbar.Brand>
+                <Navbar.Brand> 
+                    <Link to="/clarity-ai" style={{ color: '#2A52BE', fontFamily: 'Archivo Black, sans-serif' }}>ClarityAI</Link>
+                </Navbar.Brand>
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
