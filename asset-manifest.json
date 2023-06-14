@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/clarity-ai/static/css/main.8f3f8207.css",
+    "main.js": "/clarity-ai/static/js/main.77bd7b7b.js",
+    "static/media/feature-correlation.png": "/clarity-ai/static/media/feature-correlation.5d8b9f92cc9c39b8cee8.png",
+    "static/media/cnn-original.png": "/clarity-ai/static/media/cnn-original.1a3de76f13607178dbc4.png",
+    "static/media/cnn5.png": "/clarity-ai/static/media/cnn5.640a17c4120531440eae.png",
+    "static/media/cnn6.png": "/clarity-ai/static/media/cnn6.772549c297cb0ad3511b.png",
+    "static/media/cnn7.png": "/clarity-ai/static/media/cnn7.f7ff868447affe5a4f24.png",
+    "static/media/cnn3.png": "/clarity-ai/static/media/cnn3.8e76e16ad3f0553eaddc.png",
+    "static/media/cnn4.png": "/clarity-ai/static/media/cnn4.debef3de863efd236f4a.png",
+    "static/media/cnn8.png": "/clarity-ai/static/media/cnn8.d1c98eb8ed9365f70e52.png",
+    "static/media/cnn1.png": "/clarity-ai/static/media/cnn1.4125ed8c39c2fdce09c9.png",
+    "static/media/cnn2.png": "/clarity-ai/static/media/cnn2.06ef7396192f0afbf58a.png",
+    "static/media/feature-importance.png": "/clarity-ai/static/media/feature-importance.5f2596af53b7c330377d.png",
+    "static/media/main-logo.png": "/clarity-ai/static/media/main-logo.77683febc61f3193b140.png",
+    "static/media/navbar-logo.png": "/clarity-ai/static/media/navbar-logo.88d286506f5752e8905e.png",
+    "static/media/github.png": "/clarity-ai/static/media/github.987334e9f782cc505f25.png",
+    "index.html": "/clarity-ai/index.html",
+    "main.8f3f8207.css.map": "/clarity-ai/static/css/main.8f3f8207.css.map",
+    "main.77bd7b7b.js.map": "/clarity-ai/static/js/main.77bd7b7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f3f8207.css",
+    "static/js/main.77bd7b7b.js"
+  ]
+}
