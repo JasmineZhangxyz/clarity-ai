@@ -14,7 +14,7 @@ const AppRouter = () => {
     <Router> 
       <NavBar />
         <Routes>
-            <Route exact path="/" element={<HomePage />}/>
+            <Route exact path="/clarity-ai" element={<HomePage />}/>
             <Route path="/info" element={<InfoPage />} />
             <Route path="/dnn-data" element={<DnnDataPage />} />
             <Route path="/feature-importance" element={<FeatureImportancePage />} />
