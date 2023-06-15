@@ -26,9 +26,9 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    <Link to="/info" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Info</Link>
-                    <Link to="/feature-importance" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Feature Importance</Link>
-                    <Link to="/attention-maps" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Attention Maps</Link>
+                    <Link to="/clarity-ai/info" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Info</Link>
+                    <Link to="/clarity-ai/feature-importance" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Feature Importance</Link>
+                    <Link to="/clarity-ai/attention-maps" className="nav-link" style={{ color: '#2A52BE' }} activeStyle={activeLinkStyle}>Attention Maps</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

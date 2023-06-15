@@ -72,7 +72,7 @@ const AttentionMapPage = (props) => {
         />
         </Form.Group>
 
-        <Link to= "/cnn-data" >
+        <Link to= "/clarity-ai/cnn-data" >
         <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Attention Maps</Button>
         </Link>
         
