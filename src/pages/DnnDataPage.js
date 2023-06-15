@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FIgraph from '../images/feature-importance.png';
 import FIcorr from '../images/feature-correlation.png';
 
@@ -28,7 +29,7 @@ const DnnDataPage = () => {
       return (
         <div style={pageStyle}>
             <div>
-            <p>Feature importance measures the significance of input features in influencing the predictions of a DNN. Feature correlation quantifies how changes in one feature are related to changes in another feature. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</p>
+            <p>Feature importance measures the significance of input features in influencing the predictions of a DNN. Feature correlation quantifies how changes in one feature are related to changes in another feature. Check out our <Link to='/info' style = {{ color: '#BCF8EC' }}>info page</Link> for more details!</p>
             </div>
             <div style={imageLayoutStyle}>
                 <div>
