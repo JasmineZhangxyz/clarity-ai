@@ -1,5 +1,7 @@
 import React from 'react';
 import '../panel.css'; 
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Panel = ({ heading, subtext }) => (
   <div styleclassName="panel">
@@ -13,13 +15,13 @@ const Infopage = () => {
         backgroundColor: '#2A52BE',
         color: 'white',
         textAlign: 'center',
-        padding: '20px',
+        padding: '30px',
       };
 
   return (
     <div style={pageStyle}>
       <div >
-        <h2>What is interpretability?</h2>
+        <h2 style={{padding: '30px'}}>What is interpretability?</h2>
         <p>
            Interpretability is the ability to understand and explain how complex machine learning models
            make its decisions/predictions. Our project looks in “black-box” models, or models that lack opacity 
@@ -32,20 +34,34 @@ const Infopage = () => {
            the gap between technical complexity and public comprehension, and reduce the chances of harmful or erroneous 
            outcomes
         </p>
+        <p>
+            There are 2 types of interpretability. 1) inherent interpretability: which is when the models are
+            simple enough that they are easily understood by humans. 2) Interpretability methods: which allows 
+            people to understand complext models by providing more information. 
+        </p>
         <div className="sub-panels">
-          <Panel heading="For DNN's" subtext=
-          "Text here: to be decided" />
-          <Panel heading="For CNN's" subtext="Text here: to be decided" />
+          <Panel heading="Interpretable Methods and DNN's" subtext=
+          "Deep Neural Networks take a variety of features and return an output. Feature importance allows 
+          developers to see which features are weighed the most when arriving at a decision." />
+          <Panel heading="Interpretable Methods and CNN's" subtext=
+          "Convolutional Neural Networks classify images by identifying features. Attention maps allow 
+          developers to see the parts of the image the CNN is focusing on to make it's decision." />
         </div>
       </div>
 
       <div className="panel">
-        <h2>How can ClarityAI help?</h2>
+        <h2 style={{padding: '20px'}}>How can ClarityAI help?</h2>
         <p>
           Implementing interpretability can be challenging. Especially when you are just starting out. We 
-          make it simple. Upload the model and data for a DNN or CNN and we will produce interpretable 
+          make it simple. Upload your model and data for a DNN or CNN and we will produce interpretable 
           graphics.
         </p>
+        <Link to= "/feature-importance" >
+        <Button style={{backgroundColor: "#BCF8EC", color: "#2A52BE",fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Feature Importance</Button>{' '}
+        </Link>
+        <Link to="/attention-maps">
+        <Button style={{backgroundColor: "#BCF8EC", color: "#2A52BE", fontFamily: 'Archivo Black, sans-serif', margin: "2%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)", border:'0'}}size='lg'>Generate Attention Maps</Button>{' '}
+        </Link>  
       </div>
     </div>
   );
