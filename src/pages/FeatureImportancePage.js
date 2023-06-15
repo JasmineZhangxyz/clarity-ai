@@ -50,7 +50,7 @@ const FeatureImportancePage = (props) => {
 
   return (
     <div style={pageStyle}>
-      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a DNN. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details. </h6>
+      <h6 style={textStyle}> Feature Importance measures the significance of input features influencing the predictions of a DNN. Check out our <Link to="/clarity-ai/info"style={{ color: '#BCF8EC' }}>info page</Link> for more details. </h6>
     
       <Form.Group style={formStyle}>
       <Form.Label><h6 style={textStyle}> Upload your Neuro network model here</h6></Form.Label>
