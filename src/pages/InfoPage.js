@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Panel = ({ heading, subtext }) => (
-  <div styleclassName="panel">
+  <div style={{ className: 'panel' }}>
     <h3>{heading}</h3>
     <p>{subtext}</p>
   </div>
@@ -40,12 +40,16 @@ const Infopage = () => {
             people to understand complext models by providing more information. 
         </p>
         <div className="sub-panels">
-          <Panel heading="Interpretable Methods and DNN's" subtext=
-          "Deep Neural Networks take a variety of features and return an output. Feature importance allows 
-          developers to see which features are weighed the most when arriving at a decision." />
-          <Panel heading="Interpretable Methods and CNN's" subtext=
-          "Convolutional Neural Networks classify images by identifying features. Attention maps allow 
-          developers to see the parts of the image the CNN is focusing on to make it's decision." />
+          <Panel
+            heading="Interpretable Methods and DNN's"
+            subtext="Deep Neural Networks take a variety of features and return an output. Feature importance allows 
+            developers to see which features are weighed the most when arriving at a decision."
+          />
+          <Panel
+            heading="Interpretable Methods and CNN's"
+            subtext="Convolutional Neural Networks classify images by identifying features. Attention maps allow 
+            developers to see the parts of the image the CNN is focusing on to make its decision."
+          />
         </div>
       </div>
 
