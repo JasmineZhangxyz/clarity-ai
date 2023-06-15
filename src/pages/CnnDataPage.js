@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CNNog from '../images/cnn-original.png';
 import conv2d_5 from '../images/cnn1.png';
 import max_pooling2d_3 from '../images/cnn2.png';
@@ -38,7 +39,7 @@ const CnnDataPage = () => {
     return (
       <div style={pageStyle}>
           <div>
-              <p>Attention maps highlight the specific regions of an input image that are most relevant in the decision-making process of a CNN. Check out our <a href="/info"style={{ color: '#BCF8EC' }}>info page</a> for more details!</p>
+              <p>Attention maps highlight the specific regions of an input image that are most relevant in the decision-making process of a CNN. Check out our <Link to='/info' style = {{ color: '#BCF8EC' }}>info page</Link> for more details!</p>
           </div>
           <div style={imageLayoutStyle}>
             <div>
