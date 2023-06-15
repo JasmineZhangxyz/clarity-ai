@@ -72,7 +72,7 @@ const FeatureImportancePage = (props) => {
       />
       </Form.Group>
 
-      <Link to= "/dnn-data" >
+      <Link to= "/clarity-ai/dnn-data" >
       <Button style={buttonStyle} outline onClick={props.handlePrevious}>Generate Feature Importance Graphs</Button>
       </Link>
       
