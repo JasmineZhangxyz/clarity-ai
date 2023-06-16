@@ -15,13 +15,14 @@ const Infopage = () => {
         backgroundColor: '#2A52BE',
         color: 'white',
         textAlign: 'center',
-        padding: '30px',
+        padding: '5vh',
+        fontFamily: 'Montserrat, sans-serif',
       };
 
   return (
     <div style={pageStyle}>
       <div >
-        <h2 style={{padding: '30px'}}>What is interpretability?</h2>
+        <h2 style={{padding: '2vh'}}>What is interpretability?</h2>
         <p>
            Interpretability is the ability to understand and explain how complex machine learning models
            make its decisions/predictions. Our project looks in “black-box” models, or models that lack opacity 
@@ -39,7 +40,7 @@ const Infopage = () => {
             simple enough that they are easily understood by humans. 2) Interpretability methods: which allows 
             people to understand complext models by providing more information. 
         </p>
-        <div className="sub-panels">
+        <div className="sub-panels" style={{marginBlockStart: '5vh'}}>
           <Panel
             heading="Interpretable Methods and DNN's"
             subtext="Deep Neural Networks take a variety of features and return an output. Feature importance allows 
@@ -54,8 +55,8 @@ const Infopage = () => {
       </div>
 
       <div className="panel">
-        <h2 style={{padding: '20px'}}>How can ClarityAI help?</h2>
-        <p>
+        <h2 style={{padding: '2vh'}}>How can ClarityAI help?</h2>
+        <p style={{marginLeft: '3vw', marginRight: '3vw'}}>
           Implementing interpretability can be challenging. Especially when you are just starting out. We 
           make it simple. Upload your model and data for a DNN or CNN and we will produce interpretable 
           graphics.

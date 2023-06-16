@@ -14,7 +14,6 @@ const DnnDataPage = () => {
       };
   
       const imageLayoutStyle = { 
-        marginRight: '20px', 
         marginBottom: '20px', 
         flexWrap: 'wrap',
       };
