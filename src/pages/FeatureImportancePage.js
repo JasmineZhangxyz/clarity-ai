@@ -28,21 +28,26 @@ const FeatureImportancePage = (props) => {
       color: 'white',
       fontFamily: 'Montserrat, sans-serif',
       fontSize: '18px',
+      marginTop: '3vh',
   };
 
   const formStyle = {
-      padding: '5px',
-      margin: '3%',
+      marginRight: '2.5%',
+      marginLeft: '2.5%',
+      marginTop: '1%',
     };
 
   const controlStyle ={
-      margin: '0% 0% 2% 0%',
+      margin: '0% 0% 0% 0%',
+      paddingTop: '0.7vh',
+      paddingRight: '2vh',
+      textAlign: "left",
   };
 
   const buttonStyle ={
       backgroundColor: '#BCF8EC',
       color:'black',
-      margin: '0% 0% 0% 3.2%',
+      margin: '5vh 0% 0% 2.5%',
       width: '50vh',
       border: 0,
       boxShadow: "3px 5px 5px rgba(46, 46, 46, 0.62)",
@@ -56,7 +61,7 @@ const FeatureImportancePage = (props) => {
       <Form.Label><h6 style={textStyle}> Upload your Neuro network model here</h6></Form.Label>
       <Form.Control style={controlStyle}
           type="file" 
-          onChange={handleFileChange} 
+          onChange={handleFileChange}
       />
       <Form.Label><h6 style={textStyle}> Upload your test dataset here</h6></Form.Label>
       <Form.Control style={controlStyle}

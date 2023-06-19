@@ -21,7 +21,6 @@ const CnnDataPage = () => {
 
     const imageLayoutStyle = {
       flex: '1', 
-      marginRight: '20px', 
       marginBottom: '20px', 
       minWidth: '300px',
       display: 'flex', 
